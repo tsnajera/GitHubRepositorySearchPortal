@@ -94,7 +94,15 @@ a:hover, a:active{
 }
 
 .mainFooter p {
-	width: 92%;
+	float: left;
 	margin: 10px auto;
+	padding-left: 25px;
 	color: #FFF;
+	display:inline-block;
 }
+.mainFooter form{
+	padding: 10px 10px;
+	float: right;
+	
+}
+

@@ -14,7 +14,7 @@
 		<img src="img/name.png">
 		<nav>
 			<p class="search-nav">Github Repository Search Portal: <input type="text" id="inputText">
-			<button onclick = "buttonClicked()">Search</button></p>
+			<button onclick = "searchButtonClicked()">Search</button></p>
 		</nav>	
 	</header>
 	
@@ -24,7 +24,13 @@
 	</div>
 	
 	<footer class="mainFooter">
-		<p>Copyright &copy; 2015 Troy Najera</p>
+		<div id="pages">
+			<p>Copyright &copy; 2015 Troy Najera</p>
+			<form name ='pageForm' action='' id='myForm'>
+				<select onchange='handleSelect(this.form)' name='optionList' id='optionList'>
+				</select>
+			</form>
+		</div>
 	</footer>
 	
 	<script src="script.js">
