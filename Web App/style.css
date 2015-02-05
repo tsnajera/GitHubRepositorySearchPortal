@@ -46,12 +46,30 @@ a:hover, a:active{
 	border-radius: 5px;	/*rounded edges*/
 	-moz-border-radius: 5px;	/*make sure rounded edges work for mozilla*/
 	-webkit-border-radius: 5px;	/*make sure rounded edges work for webkit browsers*/
+	
 }
+
 
 .mainHeader nav p{
 	color:#FFF;
-	padding: 10px 25px;	/*top/bottom, left/right, make links wider and taller */
+	float:left;
+	padding-left: 25px;	/*top/bottom, left/right, make links wider and taller */
+	margin-top:10px;
 }
+
+.mainHeader nav input{
+	float:left;
+	margin-top:10px;
+}
+
+.mainHeader nav button{
+	float:left;
+	margin-top:10px;
+}
+
+
+
+
 
 .mainContent {
 	line-height: 25px;

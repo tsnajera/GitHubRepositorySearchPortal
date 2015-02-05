@@ -22,7 +22,8 @@
 			hr.onreadystatechange = function() {
 				if(hr.readyState == 4 && hr.status == 200) {
 					var data = JSON.parse(hr.responseText);
-					results.innerHTML = "<h2><a href='https://github.com/search'>Search Results</a></h2>";
+					results.innerHTML = "<h2><a href='https://github.com/search?q="+
+						document.getElementById("inputText").value+"'>Search Results</a></h2>";
 					if(Boolean(populateSelect)){
 						var totalPages = Math.ceil(data.total_count/resultsPerPage);
 						if((totalPages*resultsPerPage) > 1000)	//limit
