@@ -5,7 +5,6 @@
 		function searchButtonClicked(){
 			var url = baseURL + document.getElementById("inputText").value 
 			+ "&per_page="+ resultsPerPage;
-			document.getElementById("myForm").reset();	//reset form to clear previous select values
 			ajaxGetJSON(url, true);
 			pageNumber = 1 ;
 			
@@ -71,6 +70,7 @@
 		
 		function populatePageSelect(totalPages){	//only called after a new search
 			var i;
+			optionList.innerHTML ="";	//clear previous page count
 			for(i=1; i<=totalPages; i++){
 				optionList.innerHTML+="<option>"+i+"</option>";
 			}
