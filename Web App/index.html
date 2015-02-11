@@ -14,7 +14,7 @@
 		<img src="img/name.png">
 		<nav>
 			<p class="search-nav">Github Repository Search Portal: </p>
-			<input type="text" id="inputText"><button onclick = "searchButtonClicked()">Search</button>
+			<input type="text" id="inputText" autofocus><button type="submit" onclick = "searchButtonClicked()">Search</button>
 		</nav>	
 	</header>
 	
@@ -27,7 +27,7 @@
 		<div id="pages">
 			<p>Copyright &copy; 2015 Troy Najera</p>
 			<form name ='pageForm' action='' id='myForm'>
-				<select onchange='handleSelect(this.form)' name='optionList' id='optionList'>
+				<select onchange='pageNumberChanged(this.form)' name='optionList' id='optionList'>
 				</select>
 			</form>
 		</div>
